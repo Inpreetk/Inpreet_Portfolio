@@ -54,11 +54,11 @@ Select main branch & / (root) folder
 Your site will be live at https://<your-username>.github.io/Inpreet_Portfolio/
 
 📬 Connect With Me
-🌐 LinkedIn
+🌐 LinkedIn- https://www.linkedin.com/in/inpreet-kour-6526b1286/
 
 💻 GitHub
 
-✉️ inpreetkour@gmail.com
+✉️ inpreetkour100@gmail.com
 👩‍💻 This project reflects my creativity, technical skills, and passion for design + development. Let’s connect and build something amazing!
 
 Let me know if you’d like me to:
