@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inpreet Kour | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const fills = document.querySelectorAll('.skill-fill');
+    fills.forEach(fill => {
+      const width = fill.style.width;
+      fill.style.width = '0';
+      setTimeout(() => {
+        fill.style.width = width;
+      }, 400); // Delay
+    });
+  });
+</script>
+
+  <style>
+  @keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
+.skill-bar {
+  background: #004466;
+  border-radius: 20px;
+  height: 12px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+.skill-fill {
+  height: 100%;
+  background: #00bfff;
+  width: 0;
+  border-radius: 20px;
+  transition: width 1s ease-in-out;
+  
+
+}
+
+
+  @keyframes spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .animate-spin-slow {
+    animation: spin-slow 6s linear infinite;
+  }
+    
+  </style>
+</head>
+<body class="bg-gray-950 text-white">
+
+  <!-- Navbar -->
+  <header class="bg-gray-950 shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-white">Inpreet Kour</h1>
+      <nav class="space-x-6 text-sm font-medium">
+        <a href="#hero" class="relative group text-blue-400">Home</a>
+        <a href="#about" class="relative group text-gray-300 hover:text-blue-400 transition">About</a>
+        <a href="#journey" class="relative group text-gray-300 hover:text-blue-400 transition">Education</a>
+        <a href="#skills" class="relative group text-gray-300 hover:text-blue-400 transition">Skills</a>
+        <a href="#contact" class="relative group text-gray-300 hover:text-blue-400 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <!-- Hero Section: Inpreet Kour Portfolio -->
+<section id="hero" class="min-h-screen bg-[#0F172A] text-white flex items-center px-8 md:px-20 py-10">
+  <div class="flex flex-col-reverse lg:flex-row items-center justify-between w-full">
+
+    <!-- Left Content -->
+    <div class="w-full lg:w-1/2" data-aos="fade-right">
+      <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">
+        Hi, I'm <span class="text-blue-400">Inpreet Kour</span>
+      </h1>
+      <h2 class="text-xl sm:text-2xl font-semibold text-blue-500 mt-3">Web Designer & Developer</h2>
+
+      <p class="mt-6 text-lg text-gray-300 max-w-xl">
+        A multi-disciplinary creative turning bold ideas into standout digital experiences.
+        I blend design, development & branding to craft solutions that connect & convert.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="mt-8 flex gap-4">
+        <a href="assets/Inpreet-Kour.pdf" class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-600 transition">Hire Me</a>
+        <a href="#contact" class="border border-blue-500 text-blue-400 px-6 py-3 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition">Let's Talk</a>
+      </div>
+
+      <!-- Social Links -->
+      <div class="flex gap-4 mt-6 text-2xl">
+        <a href="https://www.linkedin.com/in/inpreet-kour-6526b1286/" target="_blank" class="text-blue-400 hover:text-blue-500">
+          <i data-lucide="linkedin"></i>
+        </a>
+        <a href="#" class="text-blue-400 hover:text-blue-500">
+          <i data-lucide="github"></i>
+        </a>
+        <a href="mailto:youremail@example.com" class="text-blue-400 hover:text-blue-500">
+          <i data-lucide="mail"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Profile Image -->
+    <div class="w-full lg:w-1/2 flex justify-center mb-10 lg:mb-0" data-aos="fade-left">
+      <img src="assets/Inpreet_image.jpg" alt="Inpreet Kour" class="w-72 h-72 object-cover rounded-full shadow-lg border-4 border-blue-500">
+    </div>
+
+  </div>
+</section>
+<<!-- About Me Section -->
+<section id="about" class="bg-[#0F172A] text-white py-20 px-6" data-aos="fade-up">
+  <div class="max-w-4xl mx-auto text-center">
+
+    <h2 class="text-4xl font-extrabold mb-4">
+      About <span class="text-blue-400">Me</span>
+    </h2>
+
+    <div class="relative w-40 h-40 mx-auto mt-8 mb-6">
+      <img src="assets/Inpreet_image.jpg" alt="Inpreet Kour" class="w-full h-full object-cover rounded-full border-4 border-blue-500 shadow-lg" />
+      <div class="absolute top-0 left-0 w-full h-full border-4 border-blue-500 rounded-full animate-spin-slow opacity-20"></div>
+    </div>
+
+    <h3 class="text-2xl font-bold mb-3">Hi there! Glad to see you here.</h3>
+
+    <p class="text-gray-300 text-lg leading-relaxed max-w-3xl mx-auto">
+      I'm <strong>Inpreet Kour</strong>, a passionate web developer and creative thinker with a love for solving problems through elegant digital experiences.
+      With a blend of <strong>UI/UX design</strong> and <strong>front-end development</strong>, I focus on delivering clean, user-focused websites that reflect both aesthetic and purpose.
+      Whether it’s building a responsive website, crafting a sleek UI in Figma, or designing captivating posters — I take pride in everything I do and continuously strive for growth.
+    </p>
+
+  </div>
+</section>
+
+
+  <!-- Education -->
+  <!-- My Journey Section -->
+<section id="journey" class="bg-gray-950 py-20 px-6">
+  <div class="text-center mb-16" data-aos="fade-up">
+    <h2 class="text-4xl font-bold">
+      My <span class="text-blue-400">Journey</span>
+    </h2>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+    <!-- Experience -->
+    <div data-aos="fade-right">
+      <h3 class="text-2xl font-semibold mb-6">Experience</h3>
+      <div class="relative border-l-4 border-blue-400 pl-8 space-y-10">
+
+        <!-- Executive Member -->
+        <div class="relative bg-gray-800 p-6 rounded-xl hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30 transition">
+          <span class="absolute -left-5 top-6 w-4 h-4 bg-blue-400 rounded-full border-4 border-gray-950"></span>
+          <p class="text-blue-400 text-sm flex items-center gap-2">
+            <i data-lucide="calendar" class="w-4 h-4"></i> 2023 – 2024
+          </p>
+          <h4 class="text-lg font-bold">Executive Member – Training & Placement Cell</h4>
+          <p class="text-gray-400 text-sm">
+            Actively contributed to organizing placement drives, managing recruiter relations,
+            handling student databases, and guiding peers for campus placements.
+          </p>
+        </div>
+
+        <!-- DRDO Internship -->
+        <div class="relative bg-gray-800 p-6 rounded-xl hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30 transition">
+          <span class="absolute -left-5 top-6 w-4 h-4 bg-blue-400 rounded-full border-4 border-gray-950"></span>
+          <p class="text-blue-400 text-sm flex items-center gap-2">
+            <i data-lucide="calendar" class="w-4 h-4"></i> Jan 2025
+          </p>
+          <h4 class="text-lg font-bold">Research Intern – DRDO Delhi</h4>
+          <p class="text-gray-400 text-sm">
+            Worked with allocated scientists on lab review projects and research initiatives,
+            focusing on CNN-based plant disease detection using Python, Flask, and OpenCV.
+          </p>
+        </div>
+
+        <!-- Devologix Internship -->
+        <div class="relative bg-gray-800 p-6 rounded-xl hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30 transition">
+          <span class="absolute -left-5 top-6 w-4 h-4 bg-blue-400 rounded-full border-4 border-gray-950"></span>
+          <p class="text-blue-400 text-sm flex items-center gap-2">
+            <i data-lucide="calendar" class="w-4 h-4"></i> 2024
+          </p>
+          <h4 class="text-lg font-bold">Web Designee Trainee – Devologix</h4>
+          <p class="text-gray-400 text-sm">
+            Designed mobile and web dashboards in Figma, collaborated with frontend teams,
+            and worked on improving user experience.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div data-aos="fade-left">
+      <h3 class="text-2xl font-semibold mb-6">Education</h3>
+      <div class="relative border-l-4 border-blue-400 pl-8 space-y-10">
+
+        <!-- B.Tech -->
+        <div class="relative bg-gray-800 p-6 rounded-xl hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30 transition">
+          <span class="absolute -left-5 top-6 w-4 h-4 bg-blue-400 rounded-full border-4 border-gray-950"></span>
+          <p class="text-blue-400 text-sm flex items-center gap-2">
+            <i data-lucide="calendar" class="w-4 h-4"></i> 2021 – 2025
+          </p>
+          <h4 class="text-lg font-bold">B.Tech in Computer Science - 8.81 CGPA</h4>
+          <p class="text-gray-400 text-sm">
+           Guru Nanak Dev Engineering College, Ludhiana – Built strong fundamentals in programming, development,
+            and problem-solving through academic projects and teamwork.
+          </p>
+        </div>
+
+        <!-- Higher Secondary -->
+        <div class="relative bg-gray-800 p-6 rounded-xl hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30 transition">
+          <span class="absolute -left-5 top-6 w-4 h-4 bg-blue-400 rounded-full border-4 border-gray-950"></span>
+          <p class="text-blue-400 text-sm flex items-center gap-2">
+            <i data-lucide="calendar" class="w-4 h-4"></i> 2021
+          </p>
+          <h4 class="text-lg font-bold">Higher Secondary – 97%</h4>
+          <p class="text-gray-400 text-sm">
+            New National Higher Secondary School – Completing my 12th grade in the science stream was a transformative phase filled with curiosity, late-night studies, and valuable lessons.</p>
+        </div>
+         <div class="relative bg-gray-800 p-6 rounded-xl hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30 transition">
+          <span class="absolute -left-5 top-6 w-4 h-4 bg-blue-400 rounded-full border-4 border-gray-950"></span>
+          <p class="text-blue-400 text-sm flex items-center gap-2">
+            <i data-lucide="calendar" class="w-4 h-4"></i> 2019
+          </p>
+          <h4 class="text-lg font-bold">High Secondary – 93.4%</h4>
+          <p class="text-gray-400 text-sm">
+            Sri Guru Harkrishan Memorial High School, – Focused on Science and Mathematics.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Skills Section (Two Columns with Progress Bars) -->
+<section id="skills" style="background-color: #001f3322; padding: 60px 20px;">
+  <h2 style="text-align: center; color: white; font-size: 40px; font-weight: bold;">
+    My <span style="color: #00bfff;">Skills</span>
+  </h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; margin-top: 40px; gap: 40px;">
+
+    <!-- Coding Skills -->
+    <div style="flex: 1; min-width: 300px; max-width: 500px;">
+      <h3 style="color: white; font-weight: bold; font-size: 24px;">Coding Skills</h3>
+      <div style="margin: 20px 0;">
+        <label style="color: white;">HTML <span style="float: right;">90%</span></label>
+        <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+      </div>
+      <div style="margin: 20px 0;">
+        <label style="color: white;">CSS <span style="float: right;">80%</span></label>
+        <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+      </div>
+      <div style="margin: 20px 0;">
+        <label style="color: white;">JavaScript <span style="float: right;">75%</span></label>
+        <div class="skill-bar"><div class="skill-fill" style="width: 75%;"></div></div>
+      </div>
+      <div style="margin: 20px 0;">
+        <label style="color: white;">Python <span style="float: right;">65%</span></label>
+        <div class="skill-bar"><div class="skill-fill" style="width: 65%;"></div></div>
+      </div>
+    </div>
+
+    <!-- Professional Skills -->
+    <div style="flex: 1; min-width: 300px; max-width: 500px;">
+      <h3 style="color: white; font-weight: bold; font-size: 24px;">Professional Skills</h3>
+      <div style="margin: 20px 0;">
+        <label style="color: white;">Web Design <span style="float: right;">95%</span></label>
+        <div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div>
+      </div>
+      <div style="margin: 20px 0;">
+        <label style="color: white;">Web Development <span style="float: right;">87%</span></label>
+        <div class="skill-bar"><div class="skill-fill" style="width: 87%;"></div></div>
+      </div>
+      <div style="margin: 20px 0;">
+        <label style="color: white;">Graphic Design <span style="float: right;">65%</span></label>
+        <div class="skill-bar"><div class="skill-fill" style="width: 65%;"></div></div>
+      </div>
+      <div style="margin: 20px 0;">
+        <label style="color: white;">SEO Marketing <span style="float: right;">70%</span></label>
+        <div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Let's Connect -->
+  <!-- Contact Me Section with Rotating Quotes -->
+<section id="contact" class="bg-[#0F172A] text-white py-20 px-6" data-aos="fade-up">
+  <div class="text-center mb-10">
+    <h2 class="text-4xl font-extrabold mb-4">
+      Contact <span class="text-blue-400">Me</span>
+    </h2>
+
+    <!-- Rotating Quotes -->
+    <div id="quoteBox" class="text-lg italic text-gray-300 transition-opacity duration-500 max-w-2xl mx-auto h-20 flex items-center justify-center">
+      <!-- JS will inject quotes here -->
+    </div>
+  </div>
+
+  <!-- Contact Form -->
+  <form class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 text-black">
+    <input type="text" placeholder="Full Name" class="bg-transparent border border-blue-400 text-white px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+    <input type="email" placeholder="Email" class="bg-transparent border border-blue-400 text-white px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+    <input type="text" placeholder="Mobile Number" class="bg-transparent border border-blue-400 text-white px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+    <input type="text" placeholder="Subject" class="bg-transparent border border-blue-400 text-white px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+    <textarea rows="6" placeholder="Your Message" class="md:col-span-2 bg-transparent border border-blue-400 text-white px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+    
+    <button type="submit" class="md:col-span-2 mt-4 bg-blue-500 text-white py-3 px-6 rounded-md font-semibold hover:bg-blue-600 transition">
+      Send Message
+    </button>
+  </form>
+</section>
+
+<!-- Script to Rotate Quotes -->
+<script>
+  const quotes = [
+    "Every great conversation starts with a simple hello. Let’s connect and create something meaningful.",
+    "Design is not just what it looks like — it’s how it works. Let's bring your ideas to life.",
+    "Every journey begins with a single click — yours could start right here."
+  ];
+
+  let currentQuote = 0;
+  const quoteBox = document.getElementById('quoteBox');
+
+  function rotateQuote() {
+    quoteBox.style.opacity = 0;
+    setTimeout(() => {
+      quoteBox.textContent = quotes[currentQuote];
+      quoteBox.style.opacity = 1;
+      currentQuote = (currentQuote + 1) % quotes.length;
+    }, 500);
+  }
+
+  // Start rotating quotes
+  rotateQuote(); // initial quote
+  setInterval(rotateQuote, 5000);
+</script>
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-950 text-gray-400 text-sm py-6">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+      <p>&copy; 2025 Inpreet Kour. Designed with <span class="text-red-500">❤️</span></p>
+      <nav class="space-x-6 mt-4 md:mt-0 font-medium">
+        <a href="#hero" class="hover:text-blue-400 transition">Home</a>
+        <a href="#about" class="hover:text-blue-400 transition">About</a>
+        <a href="#education" class="hover:text-blue-400 transition">Education</a>
+        <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+        <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
